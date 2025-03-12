@@ -1,31 +1,30 @@
-
 import React from 'react';
 import TestimonialCard from './TestimonialCard';
 
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'Wellness Coach',
-      quote: 'GreenLeaf transformed my approach to nutrition. Their meal planning service has made it so easy to maintain a balanced vegan diet while managing my busy schedule.',
+      name: "Sarah Johnson",
+      role: "Wellness Coach",
+      quote: "GreenLeaf transformed my approach to nutrition. Their meal planning service has made it so easy to maintain a balanced vegan diet while managing my busy schedule.",
       rating: 5
     },
     {
-      name: 'Michael Chen',
-      role: 'Restaurant Owner',
-      quote: 'The cooking workshops changed the way I approach plant-based cuisine. I've incorporated many of their techniques into my restaurant's menu with amazing feedback.',
+      name: "Michael Chen",
+      role: "Restaurant Owner",
+      quote: "The cooking workshops changed the way I approach plant-based cuisine. I've incorporated many of their techniques into my restaurant's menu with amazing feedback.",
       rating: 5
     },
     {
-      name: 'Emma Rodriguez',
-      role: 'Yoga Instructor',
-      quote: 'Their holistic approach to wellness aligns perfectly with my yoga practice. The personalized consultation helped me optimize my nutrition for better performance.',
+      name: "Emma Rodriguez",
+      role: "Yoga Instructor",
+      quote: "Their holistic approach to wellness aligns perfectly with my yoga practice. The personalized consultation helped me optimize my nutrition for better performance.",
       rating: 4
     },
     {
-      name: 'David Thompson',
-      role: 'New to Vegan Living',
-      quote: 'As someone new to veganism, their resources and support made the transition smooth and enjoyable. I don't feel like I'm missing out on anything!',
+      name: "David Thompson",
+      role: "New to Vegan Living",
+      quote: "As someone new to veganism, their resources and support made the transition smooth and enjoyable. I don't feel like I'm missing out on anything!",
       rating: 5
     }
   ];
