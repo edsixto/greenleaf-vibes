@@ -31,7 +31,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div>
                   <h3 className="font-bold text-vegan-800 text-lg">VegansHub.com For Sale!</h3>
-                  <p className="text-vegan-700 text-sm">Premium domain - Limited time offer</p>
+                  <p className="text-vegan-700 text-sm">Premium domain - Finance for just $83/month</p>
                 </div>
                 <div>
                   <CountdownTimer targetDate={targetDate} className="mb-2" />
@@ -45,7 +45,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
                   className="flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded-md transition-colors"
                 >
                   <ShoppingCart className="mr-2 h-5 w-5" />
-                  Buy Now - $599 <span className="ml-1 text-xs">(Soon $2,799)</span>
+                  Buy Now - $497 <span className="ml-1 text-xs">(Soon $27,950)</span>
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </div>

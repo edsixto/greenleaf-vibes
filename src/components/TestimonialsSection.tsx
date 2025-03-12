@@ -60,13 +60,16 @@ const TestimonialsSection: React.FC = () => {
           <p className="text-vegan-700 font-medium">
             VegansHub.com domain is available for purchase!
           </p>
+          <p className="text-vegan-600 text-sm mt-1">
+            Finance for just $83/month
+          </p>
           <a 
             href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center text-primary hover:text-primary/80 mt-2 font-semibold"
           >
-            Buy now for $599 before price increases <ExternalLink className="ml-1 h-4 w-4" />
+            Buy now for $497 before price increases to $27,950 <ExternalLink className="ml-1 h-4 w-4" />
           </a>
         </div>
       </div>

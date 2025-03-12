@@ -21,7 +21,7 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
               This domain is for sale! <span className="font-bold">VegansHub.com</span>
             </h3>
             <p className="text-sm text-vegan-700">
-              Premium vegan domain - perfect for your business
+              Premium vegan domain - perfect for your business or <span className="font-bold">finance for just $83/month</span>
             </p>
           </div>
           
@@ -29,9 +29,9 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
             <div>
               <p className="text-sm text-muted-foreground mb-1">Price increases to:</p>
               <div className="flex items-center gap-2">
-                <span className="text-vegan-700 text-lg font-bold">$599</span>
+                <span className="text-vegan-700 text-lg font-bold">$497</span>
                 <span className="text-muted-foreground font-medium">→</span>
-                <span className="text-vegan-800 text-xl font-bold">$2,799</span>
+                <span className="text-vegan-800 text-xl font-bold">$27,950</span>
               </div>
             </div>
             

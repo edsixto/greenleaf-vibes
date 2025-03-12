@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from "react";
 import { Menu, X, Leaf } from "lucide-react";
-import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -56,9 +55,6 @@ const Navbar = () => {
             <button onClick={() => scrollToSection('about')} className="nav-link font-medium">About</button>
             <button onClick={() => scrollToSection('testimonials')} className="nav-link font-medium">Testimonials</button>
             <button onClick={() => scrollToSection('contact')} className="nav-link font-medium">Contact</button>
-            <Button onClick={() => scrollToSection('contact')} className="bg-vegan-500 hover:bg-vegan-600">
-              Get Started
-            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -88,9 +84,6 @@ const Navbar = () => {
           <button onClick={() => scrollToSection('about')} className="py-2 px-4 text-left hover:bg-secondary rounded-md">About</button>
           <button onClick={() => scrollToSection('testimonials')} className="py-2 px-4 text-left hover:bg-secondary rounded-md">Testimonials</button>
           <button onClick={() => scrollToSection('contact')} className="py-2 px-4 text-left hover:bg-secondary rounded-md">Contact</button>
-          <Button onClick={() => scrollToSection('contact')} className="bg-vegan-500 hover:bg-vegan-600 w-full mt-2">
-            Get Started
-          </Button>
         </div>
       </div>
     </header>
