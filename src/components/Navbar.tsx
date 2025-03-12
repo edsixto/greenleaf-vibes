@@ -41,16 +41,16 @@ const Navbar = () => {
         isScrolled ? "bg-white/90 backdrop-blur-md shadow-sm" : "bg-transparent"
       )}
     >
-      <div className="container-custom py-3 px-4">
+      <div className="container-custom py-2 px-2 sm:px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-1 sm:space-x-2">
-            <Leaf className="h-5 w-5 sm:h-6 sm:w-6 text-vegan-500" />
-            <span className="text-lg sm:text-xl font-bold text-vegan-900">VegansHub</span>
+          <div className="flex items-center space-x-1">
+            <Leaf className="h-4 w-4 sm:h-5 sm:w-5 md:h-6 md:w-6 text-vegan-500" />
+            <span className="text-base sm:text-lg md:text-xl font-bold text-vegan-900">VegansHub</span>
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <nav className="hidden md:flex items-center space-x-4 lg:space-x-8">
             <button onClick={() => scrollToSection('services')} className="nav-link font-medium text-sm lg:text-base">Services</button>
             <button onClick={() => scrollToSection('about')} className="nav-link font-medium text-sm lg:text-base">About</button>
             <button onClick={() => scrollToSection('testimonials')} className="nav-link font-medium text-sm lg:text-base">Testimonials</button>
@@ -64,9 +64,9 @@ const Navbar = () => {
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMenuOpen ? (
-              <X className="h-5 w-5 sm:h-6 sm:w-6" />
+              <X className="h-5 w-5" />
             ) : (
-              <Menu className="h-5 w-5 sm:h-6 sm:w-6" />
+              <Menu className="h-5 w-5" />
             )}
           </button>
         </div>
@@ -79,11 +79,11 @@ const Navbar = () => {
           isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         )}
       >
-        <div className="container-custom py-2 sm:py-4 flex flex-col space-y-2 sm:space-y-4">
-          <button onClick={() => scrollToSection('services')} className="py-2 px-4 text-left hover:bg-secondary rounded-md text-sm sm:text-base">Services</button>
-          <button onClick={() => scrollToSection('about')} className="py-2 px-4 text-left hover:bg-secondary rounded-md text-sm sm:text-base">About</button>
-          <button onClick={() => scrollToSection('testimonials')} className="py-2 px-4 text-left hover:bg-secondary rounded-md text-sm sm:text-base">Testimonials</button>
-          <button onClick={() => scrollToSection('contact')} className="py-2 px-4 text-left hover:bg-secondary rounded-md text-sm sm:text-base">Contact</button>
+        <div className="container-custom py-2 flex flex-col space-y-1">
+          <button onClick={() => scrollToSection('services')} className="py-2 px-3 text-left hover:bg-secondary rounded-md text-sm">Services</button>
+          <button onClick={() => scrollToSection('about')} className="py-2 px-3 text-left hover:bg-secondary rounded-md text-sm">About</button>
+          <button onClick={() => scrollToSection('testimonials')} className="py-2 px-3 text-left hover:bg-secondary rounded-md text-sm">Testimonials</button>
+          <button onClick={() => scrollToSection('contact')} className="py-2 px-3 text-left hover:bg-secondary rounded-md text-sm">Contact</button>
         </div>
       </div>
     </header>
