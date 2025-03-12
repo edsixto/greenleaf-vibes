@@ -3,7 +3,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, MapPin, ExternalLink, Tag } from 'lucide-react';
 
 const ContactSection: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-vegan-900 mb-1">Email Us</h3>
-                  <p className="text-muted-foreground">info@greenleaf.com</p>
+                  <p className="text-muted-foreground">info@veganshub.com</p>
                 </div>
               </div>
               
@@ -38,7 +38,7 @@ const ContactSection: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold text-vegan-900 mb-1">Call Us</h3>
-                  <p className="text-muted-foreground">(555) 123-4567</p>
+                  <p className="text-muted-foreground">(555) XXX-XXXX</p>
                 </div>
               </div>
               
@@ -57,6 +57,25 @@ const ContactSection: React.FC = () => {
                 </div>
               </div>
             </div>
+            
+            {/* Domain for sale callout */}
+            <div className="mt-8 bg-vegan-50 p-4 rounded-lg border border-vegan-200">
+              <div className="flex items-center">
+                <Tag className="h-6 w-6 text-vegan-600 mr-2" />
+                <h3 className="font-semibold text-vegan-800">Premium Domain For Sale</h3>
+              </div>
+              <p className="text-vegan-700 my-2">
+                The VegansHub.com domain is available for purchase at a special rate for a limited time.
+              </p>
+              <a 
+                href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center text-primary hover:text-primary/80 font-medium"
+              >
+                Purchase Domain <ExternalLink className="ml-1 h-4 w-4" />
+              </a>
+            </div>
           </div>
           
           <div className="bg-white rounded-xl shadow-md p-8 animate-fade-in">
@@ -71,6 +90,7 @@ const ContactSection: React.FC = () => {
                     id="name" 
                     placeholder="Your name" 
                     className="border-vegan-200 focus-visible:ring-vegan-400"
+                    disabled
                   />
                 </div>
                 <div className="space-y-2">
@@ -82,6 +102,7 @@ const ContactSection: React.FC = () => {
                     type="email" 
                     placeholder="Your email" 
                     className="border-vegan-200 focus-visible:ring-vegan-400"
+                    disabled
                   />
                 </div>
               </div>
@@ -94,6 +115,7 @@ const ContactSection: React.FC = () => {
                   id="subject" 
                   placeholder="Subject" 
                   className="border-vegan-200 focus-visible:ring-vegan-400"
+                  disabled
                 />
               </div>
               
@@ -105,12 +127,21 @@ const ContactSection: React.FC = () => {
                   id="message" 
                   placeholder="Your message..." 
                   className="border-vegan-200 focus-visible:ring-vegan-400 min-h-[120px]"
+                  disabled
                 />
               </div>
               
-              <Button type="submit" className="w-full bg-vegan-500 hover:bg-vegan-600">
+              <Button 
+                type="button" 
+                className="w-full bg-vegan-500 hover:bg-vegan-600 cursor-not-allowed opacity-80"
+                disabled
+              >
                 Send Message
               </Button>
+              
+              <p className="text-xs text-center text-muted-foreground">
+                * This form is currently disabled for demonstration purposes
+              </p>
             </form>
           </div>
         </div>

@@ -8,9 +8,9 @@ interface DomainBannerProps {
 }
 
 const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
-  // Set target date to 7 days from now
+  // Set target date to 15 days from now
   const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 7);
+  targetDate.setDate(targetDate.getDate() + 15);
 
   return (
     <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-3 shadow-md relative">
@@ -18,7 +18,7 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <div className="text-center lg:text-left">
             <h3 className="font-semibold text-vegan-800">
-              This domain is for sale! <span className="font-bold">GreenLeaf.com</span>
+              This domain is for sale! <span className="font-bold">VegansHub.com</span>
             </h3>
             <p className="text-sm text-vegan-700">
               Premium vegan domain - perfect for your business

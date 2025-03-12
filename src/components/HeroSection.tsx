@@ -1,13 +1,18 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ShoppingCart, ExternalLink } from 'lucide-react';
+import CountdownTimer from './CountdownTimer';
 
 interface HeroSectionProps {
   scrollToContact: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
+  // Set target date to 15 days from now
+  const targetDate = new Date();
+  targetDate.setDate(targetDate.getDate() + 15);
+
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-vegan-50 to-white">
       <div className="container-custom">
@@ -20,6 +25,32 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
               Discover the power of plant-based living with our premium vegan products 
               and services designed to enhance your health and wellbeing.
             </p>
+            
+            {/* Domain For Sale Banner */}
+            <div className="bg-vegan-100 p-4 rounded-lg mb-6 border-2 border-vegan-300 animate-pulse">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div>
+                  <h3 className="font-bold text-vegan-800 text-lg">VegansHub.com For Sale!</h3>
+                  <p className="text-vegan-700 text-sm">Premium domain - Limited time offer</p>
+                </div>
+                <div>
+                  <CountdownTimer targetDate={targetDate} className="mb-2" />
+                </div>
+              </div>
+              <div className="mt-3">
+                <a 
+                  href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded-md transition-colors"
+                >
+                  <ShoppingCart className="mr-2 h-5 w-5" />
+                  Buy Now - $599 <span className="ml-1 text-xs">(Soon $2,799)</span>
+                  <ExternalLink className="ml-2 h-4 w-4" />
+                </a>
+              </div>
+            </div>
+            
             <div className="flex flex-col sm:flex-row gap-4">
               <Button 
                 onClick={scrollToContact}
@@ -48,6 +79,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
                 alt="Fresh vegan food" 
                 className="w-full h-auto object-cover"
               />
+              
+              {/* Domain sale indicator */}
+              <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg animate-pulse">
+                Domain For Sale
+              </div>
             </div>
           </div>
         </div>

@@ -5,26 +5,26 @@ import TestimonialCard from './TestimonialCard';
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      role: "Wellness Coach",
+      name: 'Sarah Johnson',
+      role: 'Wellness Coach',
       quote: "GreenLeaf transformed my approach to nutrition. Their meal planning service has made it so easy to maintain a balanced vegan diet while managing my busy schedule.",
       rating: 5
     },
     {
-      name: "Michael Chen",
-      role: "Restaurant Owner",
+      name: 'Michael Chen',
+      role: 'Restaurant Owner',
       quote: "The cooking workshops changed the way I approach plant-based cuisine. I've incorporated many of their techniques into my restaurant's menu with amazing feedback.",
       rating: 5
     },
     {
-      name: "Emma Rodriguez",
-      role: "Yoga Instructor",
+      name: 'Emma Rodriguez',
+      role: 'Yoga Instructor',
       quote: "Their holistic approach to wellness aligns perfectly with my yoga practice. The personalized consultation helped me optimize my nutrition for better performance.",
       rating: 4
     },
     {
-      name: "David Thompson",
-      role: "New to Vegan Living",
+      name: 'David Thompson',
+      role: 'New to Vegan Living',
       quote: "As someone new to veganism, their resources and support made the transition smooth and enjoyable. I don't feel like I'm missing out on anything!",
       rating: 5
     }
@@ -52,6 +52,21 @@ const TestimonialsSection: React.FC = () => {
               style={{ animationDelay: `${index * 0.1}s` } as React.CSSProperties}
             />
           ))}
+        </div>
+        
+        {/* Domain For Sale Notice */}
+        <div className="mt-16 p-4 bg-vegan-50 border border-vegan-200 rounded-lg text-center">
+          <p className="text-vegan-700 font-medium">
+            VegansHub.com domain is available for purchase!
+          </p>
+          <a 
+            href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center text-primary hover:text-primary/80 mt-2 font-semibold"
+          >
+            Buy now for $599 before price increases <ExternalLink className="ml-1 h-4 w-4" />
+          </a>
         </div>
       </div>
     </section>

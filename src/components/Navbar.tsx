@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Leaf className="h-6 w-6 text-vegan-500" />
-            <span className="text-xl font-bold text-vegan-900">GreenLeaf</span>
+            <span className="text-xl font-bold text-vegan-900">VegansHub</span>
           </div>
 
           {/* Desktop Navigation */}
