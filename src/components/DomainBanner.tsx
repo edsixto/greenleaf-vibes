@@ -8,9 +8,9 @@ interface DomainBannerProps {
 
 const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
   return (
-    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-2 shadow-md relative">
+    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-1 sm:py-2 shadow-md relative">
       <div className="container-custom">
-        <div className="flex flex-col items-center justify-center px-2 py-1">
+        <div className="flex flex-col items-center justify-center px-2 py-1 mt-10 sm:mt-0">
           <a 
             href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
             target="_blank"

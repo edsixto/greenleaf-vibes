@@ -14,7 +14,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
   targetDate.setDate(targetDate.getDate() + 15);
 
   return (
-    <section className="relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-b from-vegan-50 to-white">
+    <section className="hero-section relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-b from-vegan-50 to-white">
       <div className="container-custom px-3 sm:px-4">
         {/* Domain For Sale Button - Centered above the heading */}
         <div className="text-center mb-4 sm:mb-6">
