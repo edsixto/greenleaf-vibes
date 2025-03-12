@@ -20,9 +20,7 @@ const Index: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col">
       {showBanner && <DomainBanner onClose={() => setShowBanner(false)} />}
-      <div className={`${showBanner ? 'pt-16' : ''}`}>
-        <Navbar />
-      </div>
+      <Navbar />
       <main className="flex-grow">
         <HeroSection scrollToContact={scrollToContact} />
         <ServicesSection />
