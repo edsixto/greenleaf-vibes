@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, ShoppingCart, ExternalLink } from 'lucide-react';
+import { ShoppingCart, ExternalLink } from 'lucide-react';
 import CountdownTimer from './CountdownTimer';
 
 interface HeroSectionProps {
@@ -45,21 +45,13 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
                   className="flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white font-bold py-2 px-4 rounded-md transition-colors"
                 >
                   <ShoppingCart className="mr-2 h-5 w-5" />
-                  Buy Now - $497 <span className="ml-1 text-xs">(Soon $27,950)</span>
+                  Buy Now - $497 <span className="ml-1 text-xs">(Soon $2,750)</span>
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                onClick={scrollToContact}
-                size="lg" 
-                className="bg-vegan-500 hover:bg-vegan-600 text-white px-8"
-              >
-                Get Started
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
               <Button 
                 variant="outline" 
                 size="lg" 

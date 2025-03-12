@@ -13,7 +13,7 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
   targetDate.setDate(targetDate.getDate() + 15);
 
   return (
-    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-3 shadow-md relative">
+    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-3 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4">
           <div className="text-center lg:text-left">
@@ -31,7 +31,7 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
               <div className="flex items-center gap-2">
                 <span className="text-vegan-700 text-lg font-bold">$497</span>
                 <span className="text-muted-foreground font-medium">→</span>
-                <span className="text-vegan-800 text-xl font-bold">$27,950</span>
+                <span className="text-vegan-800 text-xl font-bold">$2,750</span>
               </div>
             </div>
             

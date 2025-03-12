@@ -69,7 +69,7 @@ const TestimonialsSection: React.FC = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center text-primary hover:text-primary/80 mt-2 font-semibold"
           >
-            Buy now for $497 before price increases to $27,950 <ExternalLink className="ml-1 h-4 w-4" />
+            Buy now for $497 before price increases to $2,750 <ExternalLink className="ml-1 h-4 w-4" />
           </a>
         </div>
       </div>
