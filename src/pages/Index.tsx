@@ -1,12 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
 
-const Index = () => {
+import React, { useState, useRef } from 'react';
+import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/HeroSection';
+import ServicesSection from '@/components/ServicesSection';
+import AboutSection from '@/components/AboutSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import ContactSection from '@/components/ContactSection';
+import Footer from '@/components/Footer';
+import DomainBanner from '@/components/DomainBanner';
+
+const Index: React.FC = () => {
+  const [showBanner, setShowBanner] = useState(true);
+  const contactRef = useRef<HTMLDivElement>(null);
+
+  const scrollToContact = () => {
+    contactRef.current?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen flex flex-col">
+      {showBanner && <DomainBanner onClose={() => setShowBanner(false)} />}
+      <Navbar />
+      <main className={`flex-grow ${showBanner ? 'pt-12' : ''}`}>
+        <HeroSection scrollToContact={scrollToContact} />
+        <ServicesSection />
+        <AboutSection />
+        <TestimonialsSection />
+        <div ref={contactRef}>
+          <ContactSection />
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 };
