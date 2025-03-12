@@ -8,19 +8,19 @@ interface DomainBannerProps {
 
 const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
   return (
-    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-4 shadow-md relative">
+    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-3 sm:py-4 shadow-md relative">
       <div className="container-custom">
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center px-2">
           <a 
             href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-vegan-800 font-medium hover:text-vegan-900 transition-colors text-lg"
+            className="flex items-center text-vegan-800 font-medium hover:text-vegan-900 transition-colors text-base sm:text-lg text-center"
           >
             Domain For Sale - VegansHub.com
-            <ExternalLink className="ml-2 h-5 w-5" />
+            <ExternalLink className="ml-2 h-5 w-5 flex-shrink-0" />
           </a>
-          <p className="text-sm text-vegan-700 mt-1">
+          <p className="text-xs sm:text-sm text-vegan-700 mt-1 text-center">
             This website is designed and built to showcase what your website could look like.
           </p>
         </div>
