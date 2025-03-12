@@ -10,7 +10,7 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
   return (
     <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-4 shadow-md relative">
       <div className="container-custom">
-        <div className="flex items-center justify-center">
+        <div className="flex flex-col items-center justify-center">
           <a 
             href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
             target="_blank"
@@ -20,6 +20,9 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
             Domain For Sale - VegansHub.com
             <ExternalLink className="ml-2 h-5 w-5" />
           </a>
+          <p className="text-sm text-vegan-700 mt-1">
+            This website is designed and built to showcase what your website could look like.
+          </p>
         </div>
         
         <button 
