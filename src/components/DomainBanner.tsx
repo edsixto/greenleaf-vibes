@@ -8,17 +8,17 @@ interface DomainBannerProps {
 
 const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
   return (
-    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-3 shadow-md relative">
+    <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-4 shadow-md relative">
       <div className="container-custom">
         <div className="flex items-center justify-center">
           <a 
             href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center text-vegan-800 font-medium hover:text-vegan-900 transition-colors"
+            className="flex items-center text-vegan-800 font-medium hover:text-vegan-900 transition-colors text-lg"
           >
             Domain For Sale - VegansHub.com
-            <ExternalLink className="ml-2 h-4 w-4" />
+            <ExternalLink className="ml-2 h-5 w-5" />
           </a>
         </div>
         
