@@ -1,6 +1,7 @@
 
 import React from 'react';
 import TestimonialCard from './TestimonialCard';
+import { ExternalLink } from 'lucide-react';
 
 const TestimonialsSection: React.FC = () => {
   const testimonials = [
