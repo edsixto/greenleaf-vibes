@@ -10,6 +10,7 @@ interface TestimonialCardProps {
   rating: number;
   imageSrc?: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({
@@ -18,13 +19,17 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({
   quote,
   rating,
   imageSrc,
-  className
+  className,
+  style
 }) => {
   return (
-    <div className={cn(
-      "bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-border flex flex-col h-full",
-      className
-    )}>
+    <div 
+      className={cn(
+        "bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-border flex flex-col h-full",
+        className
+      )}
+      style={style}
+    >
       {/* Stars */}
       <div className="flex space-x-1 mb-4">
         {[...Array(5)].map((_, i) => (

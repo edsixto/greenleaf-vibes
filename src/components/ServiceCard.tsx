@@ -8,19 +8,24 @@ interface ServiceCardProps {
   title: string;
   description: string;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ 
   icon: Icon, 
   title, 
   description,
-  className 
+  className,
+  style
 }) => {
   return (
-    <div className={cn(
-      "bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-border", 
-      className
-    )}>
+    <div 
+      className={cn(
+        "bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-all duration-300 card-hover border border-border", 
+        className
+      )}
+      style={style}
+    >
       <div className="inline-flex items-center justify-center p-3 bg-vegan-100 rounded-lg mb-4">
         <Icon className="h-6 w-6 text-vegan-600" />
       </div>
