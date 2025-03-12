@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Info, X } from 'lucide-react';
+import { ExternalLink, X } from 'lucide-react';
 
 interface DomainBannerProps {
   onClose: () => void;
@@ -10,11 +10,16 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
   return (
     <div className="bg-gradient-to-r from-sky-100 to-vegan-100 py-3 shadow-md relative">
       <div className="container-custom">
-        <div className="flex items-center justify-center gap-2">
-          <Info className="h-5 w-5 text-vegan-800" />
-          <p className="text-sm font-medium text-vegan-800">
-            Welcome to the future of plant-based living!
-          </p>
+        <div className="flex items-center justify-center">
+          <a 
+            href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center text-vegan-800 font-medium hover:text-vegan-900 transition-colors"
+          >
+            Domain For Sale - VegansHub.com
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </a>
         </div>
         
         <button 

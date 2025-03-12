@@ -16,6 +16,21 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-gradient-to-b from-vegan-50 to-white">
       <div className="container-custom">
+        {/* Domain For Sale Button - Centered above the heading */}
+        <div className="text-center mb-8">
+          <a 
+            href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-vegan-600 hover:bg-vegan-700 text-white font-bold py-2 px-6 rounded-md transition-colors shadow-md"
+          >
+            <ShoppingCart className="mr-2 h-5 w-5" />
+            Domain For Sale - VegansHub.com - $497 
+            <span className="ml-1 text-xs">(Soon $2,750)</span>
+            <ExternalLink className="ml-2 h-4 w-4" />
+          </a>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="heading-xl text-vegan-900 mb-6">
