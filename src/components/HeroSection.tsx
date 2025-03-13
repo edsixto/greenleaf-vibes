@@ -2,17 +2,12 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, ExternalLink } from 'lucide-react';
-import CountdownTimer from './CountdownTimer';
 
 interface HeroSectionProps {
   scrollToContact: () => void;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
-  // Set target date to 15 days from now
-  const targetDate = new Date();
-  targetDate.setDate(targetDate.getDate() + 15);
-
   return (
     <section className="hero-section relative pt-20 pb-12 md:pt-32 md:pb-24 overflow-hidden bg-gradient-to-b from-vegan-50 to-white">
       <div className="container-custom px-3 sm:px-4">
@@ -34,22 +29,32 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <div className="animate-fade-in">
             <h1 className="heading-xl text-vegan-900 mb-3 sm:mb-4 text-center lg:text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
-              Fresh & Healthy <span className="text-vegan-500">Vegan</span> Lifestyle
+              Do you want to Stand Out in the Vegan Industry?
             </h1>
-            <p className="text-sm sm:text-base md:text-lg text-muted-foreground mb-4 sm:mb-6 md:pr-0 lg:pr-12 text-center lg:text-left">
-              Discover the power of plant-based living with our premium vegan products 
-              and services designed to enhance your health and wellbeing.
-            </p>
+            <div className="text-sm sm:text-base md:text-lg text-muted-foreground mb-4 sm:mb-6 md:pr-0 lg:pr-12 text-center lg:text-left">
+              <p className="mb-3">
+                VegansHub.com gives you an instantly recognizable brand to attract and engage your target audience/customers.
+              </p>
+              <p className="font-medium text-vegan-800 mb-1">
+                VegansHub.com is Available – Own It for Just $247 Down
+              </p>
+              <p className="mb-1">
+                Finance the final 3 payments for just $83/month.
+              </p>
+              <p className="mb-3">
+                Or secure it with a one-time payment of $497.
+              </p>
+              <p className="text-sm text-vegan-600">
+                🔹 This website is designed and built to showcase what your website could look like.
+              </p>
+            </div>
             
             {/* Domain For Sale Banner */}
-            <div className="bg-vegan-100 p-2.5 sm:p-4 rounded-lg mb-4 sm:mb-6 border border-vegan-300 animate-pulse">
+            <div className="bg-vegan-100 p-2.5 sm:p-4 rounded-lg mb-4 sm:mb-6 border border-vegan-300">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-2 sm:gap-4">
                 <div className="text-center sm:text-left">
                   <h3 className="font-bold text-vegan-800 text-sm sm:text-base">VegansHub.com For Sale!</h3>
                   <p className="text-vegan-700 text-xs">Premium domain - Finance for just $83/month</p>
-                </div>
-                <div>
-                  <CountdownTimer targetDate={targetDate} className="mb-1 text-xs sm:text-sm" />
                 </div>
               </div>
               <div className="mt-2">
@@ -61,7 +66,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
                 >
                   <ShoppingCart className="mr-1.5 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                   <span className="whitespace-nowrap">Buy Now - $497</span>
-                  <span className="ml-1 text-[10px] sm:text-xs whitespace-nowrap">(Soon $2,750)</span>
+                  <span className="ml-1 text-[10px] sm:text-xs whitespace-nowrap">(Limited Time Offer)</span>
                   <ExternalLink className="ml-1.5 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                 </a>
               </div>
