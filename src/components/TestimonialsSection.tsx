@@ -8,7 +8,7 @@ const TestimonialsSection: React.FC = () => {
     {
       name: 'Sarah Johnson',
       role: 'Wellness Coach',
-      quote: "GreenLeaf transformed my approach to nutrition. Their meal planning service has made it so easy to maintain a balanced vegan diet while managing my busy schedule.",
+      quote: "VegansHub transformed my approach to nutrition. Their meal planning service has made it so easy to maintain a balanced vegan diet while managing my busy schedule.",
       rating: 5
     },
     {
@@ -58,7 +58,7 @@ const TestimonialsSection: React.FC = () => {
         {/* Domain For Sale Notice */}
         <div className="mt-16 p-4 bg-vegan-50 border border-vegan-200 rounded-lg text-center">
           <p className="text-vegan-700 font-medium">
-            VegansHub.com domain is available for purchase!
+            VegansHub.com is Available – Own It for Just $247 Down
           </p>
           <p className="text-vegan-600 text-sm mt-1">
             This is a limited time offer. List price on VegansHub.com is $2,750.

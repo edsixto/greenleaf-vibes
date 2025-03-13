@@ -30,9 +30,9 @@ const AboutSection: React.FC = () => {
           </div>
           
           <div className="animate-fade-in order-1 lg:order-2">
-            <h2 className="heading-lg text-vegan-900 mb-6">About GreenLeaf Vegan</h2>
+            <h2 className="heading-lg text-vegan-900 mb-6">About VegansHub</h2>
             <p className="paragraph mb-6">
-              Founded on the principles of compassion, sustainability, and wellness, GreenLeaf has been at the forefront of the plant-based movement for over a decade. Our mission is to make vegan living accessible, enjoyable, and beneficial for everyone.
+              Founded on the principles of compassion, sustainability, and wellness, VegansHub has been at the forefront of the plant-based movement for over a decade. Our mission is to make vegan living accessible, enjoyable, and beneficial for everyone.
             </p>
             <p className="paragraph mb-8">
               Our team of certified nutritionists, chefs, and wellness experts are dedicated to providing you with the highest quality products and services that support your health goals while honoring your commitment to ethical living.
