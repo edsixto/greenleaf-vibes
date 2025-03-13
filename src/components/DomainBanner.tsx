@@ -17,7 +17,7 @@ const DomainBanner: React.FC<DomainBannerProps> = ({ onClose }) => {
             rel="noopener noreferrer"
             className="flex items-center text-vegan-800 font-medium hover:text-vegan-900 transition-colors text-sm sm:text-base md:text-lg text-center"
           >
-            Domain For Sale - VegansHub.com
+            Own VegansHub.com for Just $247 Down
             <ExternalLink className="ml-1 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
           </a>
           <p className="text-xs sm:text-sm text-vegan-700 mt-0.5 text-center max-w-xs sm:max-w-none px-2">

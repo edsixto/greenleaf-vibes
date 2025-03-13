@@ -20,8 +20,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
             className="inline-flex items-center justify-center bg-vegan-600 hover:bg-vegan-700 text-white font-bold py-1.5 px-3 sm:py-2 sm:px-4 rounded-md transition-colors shadow-md text-xs sm:text-sm"
           >
             <ShoppingCart className="mr-1 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-            <span className="whitespace-nowrap">Domain For Sale</span>
-            <span className="ml-1 text-[10px] sm:text-xs whitespace-nowrap">($497)</span>
+            <span className="whitespace-nowrap">Own VegansHub.com for Just $247 Down</span>
             <ExternalLink className="ml-1 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
           </a>
         </div>
@@ -65,8 +64,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ scrollToContact }) => {
                   className="flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white font-bold py-1.5 px-3 rounded-md transition-colors text-xs sm:text-sm"
                 >
                   <ShoppingCart className="mr-1.5 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
-                  <span className="whitespace-nowrap">Buy Now - $497</span>
-                  <span className="ml-1 text-[10px] sm:text-xs whitespace-nowrap">(Limited Time Offer)</span>
+                  <span className="whitespace-nowrap">Own VegansHub.com for Just $247 Down</span>
                   <ExternalLink className="ml-1.5 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
                 </a>
               </div>
