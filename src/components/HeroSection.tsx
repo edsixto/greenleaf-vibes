@@ -27,27 +27,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </a>
         </div>
         
-        {/* Top Box Component */}
-        <div className="relative z-10 mb-8">
-          <div className="bg-white/95 rounded-lg shadow-lg p-4">
+        {/* Top Box Component - Compact and left aligned */}
+        <div className="relative z-10 mb-6 max-w-[420px]">
+          <div className="bg-white rounded-md shadow-md p-3">
             {/* CTA Button */}
             <a
               href="https://www.atom.com/payments/pay/ORgbU7hKDU"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full flex items-center justify-center bg-vegan-600 hover:bg-vegan-700 text-white font-bold py-3 px-6 rounded-full shadow-lg mb-4"
+              className="w-full flex items-center justify-center bg-sky-600 hover:bg-sky-700 text-white font-medium py-2 px-4 rounded-md shadow-md mb-3 transition-colors"
             >
               <ShoppingCart className="mr-2 h-4 w-4 flex-shrink-0" />
-              <span>Own VegansHub.com for Just $247 Down</span>
+              <span className="text-sm">Own VegansHub.com for Just $247 Down</span>
               <ExternalLink className="ml-2 h-4 w-4 flex-shrink-0" />
             </a>
             
             {/* Logo Strip */}
             <div className="flex justify-center">
-              <div className="flex space-x-6 items-center">
-                <img src="https://s.googleusercontent.com/webtools/logos/godaddy-logo.svg" alt="GoDaddy" className="h-7 w-auto" />
-                <img src="https://atom.com/wp-content/uploads/2023/11/ATOM-LOGO-WHITE-scaled.jpg" alt="Atom.com" className="h-7 w-auto object-contain bg-gray-800 p-1 rounded" />
-                <img src="https://static.escrow.com/escrow/escrow-com-logo.svg" alt="Escrow.com" className="h-7 w-auto" />
+              <div className="flex space-x-4 items-center">
+                <img src="https://s.googleusercontent.com/webtools/logos/godaddy-logo.svg" alt="GoDaddy" className="h-5 w-auto grayscale opacity-80" />
+                <img src="https://atom.com/wp-content/uploads/2023/11/ATOM-LOGO-WHITE-scaled.jpg" alt="Atom.com" className="h-5 w-auto object-contain bg-gray-800 p-0.5 rounded grayscale opacity-80" />
+                <img src="https://static.escrow.com/escrow/escrow-com-logo.svg" alt="Escrow.com" className="h-5 w-auto grayscale opacity-80" />
               </div>
             </div>
           </div>
