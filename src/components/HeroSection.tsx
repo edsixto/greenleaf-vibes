@@ -1,10 +1,13 @@
+
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart, ExternalLink, Check } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
+
 interface HeroSectionProps {
   scrollToContact: () => void;
 }
+
 const HeroSection: React.FC<HeroSectionProps> = ({
   scrollToContact
 }) => {
@@ -12,7 +15,42 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="container-custom px-3 sm:px-4">
         {/* Domain For Sale Button - Centered above the heading */}
         <div className="text-center mb-4 sm:mb-6">
-          
+          <a 
+            href="https://www.atom.com/payments/pay/ORgbU7hKDU" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center bg-vegan-600 hover:bg-vegan-700 text-white font-bold py-1.5 px-3 sm:py-2 sm:px-4 rounded-md transition-colors shadow-md text-xs sm:text-sm"
+          >
+            <ShoppingCart className="mr-1 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+            <span className="whitespace-nowrap">Own VegansHub.com for Just $247 Down</span>
+            <ExternalLink className="ml-1 h-3 w-3 sm:h-4 sm:w-4 flex-shrink-0" />
+          </a>
+        </div>
+        
+        {/* Top Box Component */}
+        <div className="relative z-10 mb-8">
+          <div className="bg-white/95 rounded-lg shadow-lg p-4">
+            {/* CTA Button */}
+            <a
+              href="https://www.atom.com/payments/pay/ORgbU7hKDU"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full flex items-center justify-center bg-vegan-600 hover:bg-vegan-700 text-white font-bold py-3 px-6 rounded-full shadow-lg mb-4"
+            >
+              <ShoppingCart className="mr-2 h-4 w-4 flex-shrink-0" />
+              <span>Own VegansHub.com for Just $247 Down</span>
+              <ExternalLink className="ml-2 h-4 w-4 flex-shrink-0" />
+            </a>
+            
+            {/* Logo Strip */}
+            <div className="flex justify-center">
+              <div className="flex space-x-6 items-center">
+                <img src="https://s.googleusercontent.com/webtools/logos/godaddy-logo.svg" alt="GoDaddy" className="h-7 w-auto" />
+                <img src="https://atom.com/wp-content/uploads/2023/11/ATOM-LOGO-WHITE-scaled.jpg" alt="Atom.com" className="h-7 w-auto object-contain bg-gray-800 p-1 rounded" />
+                <img src="https://static.escrow.com/escrow/escrow-com-logo.svg" alt="Escrow.com" className="h-7 w-auto" />
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
@@ -81,7 +119,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       {/* Decorative shape */}
       <div className="absolute bottom-0 left-0 w-full h-8 sm:h-12 md:h-20 bg-white" style={{
       clipPath: 'polygon(0 100%, 100% 100%, 100% 0)'
-    }}></div>
+      }}></div>
     </section>;
 };
+
 export default HeroSection;
